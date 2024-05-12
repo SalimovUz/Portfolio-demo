@@ -1,0 +1,12 @@
+body {
+  font-family: "Red Hat Display";
+}
+
+
+#contact {
+  transition: all 0.3s ease;
+}
+
+#service {
+  transition: all 0.3s ease;
+}
