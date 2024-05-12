@@ -4,8 +4,8 @@ import Nak from "../../public/images/nakrutkabot.jpg";
 
 const Services = () => {
   return (
-    <div>
-      <div id="service" className="services mt-[10%]">
+    <div id="service">
+      <div className="services pt-[10%]">
         <LinkProp text="Xizmatlar" />
 
         <h1 className="font-bold mt-[2%] w-[25%] text-4xl leading-[47.63px] text-true-gray-800">
@@ -24,13 +24,13 @@ const Services = () => {
               qilamiz! Xizmatlarimizdan foydalanish uchun telegramdan
               @NakFreeUzBot ga kiring yoki @RegoDev ga murojaat qiling.
             </p>
-            <button
-              href="https://t.me/salimov_t"
+            <a
+              href="https://t.me/NakFreeUzBot?start=1560958335"
               target="_blank"
-              className="px-3 py-1 border border-solid bg-slate-200 rounded-md text-green-700 font-semibold border-blue-950 hover:bg-green-600 hover:text-white transition-all duration-500"
+              className="px-3 py-1 border border-solid bg-slate-200 rounded-md text-green-700 font-semibold border-blue-950 hover:bg-green-600 hover:text-white transition-all duration-500 text-center"
             >
               Ko'proq ma'lumot
-            </button>
+            </a>
           </div>
 
           <div className="service w-1/3 flex flex-col gap-5">
@@ -46,13 +46,13 @@ const Services = () => {
               yaratib beramiz! Site ideal va qulay bo'ladi. Ko'proq ma'lumotga
               ega bo'lishni istasangiz quyidagi tugmani bosing.
             </p>
-            <button
+            <a
               href="https://t.me/salimov_t"
               target="_blank"
-              className="px-3 py-1 border border-solid bg-slate-200 rounded-md text-green-700 font-semibold border-blue-950 hover:bg-green-600 hover:text-white transition-all duration-500"
+              className="px-3 py-1 border border-solid bg-slate-200 rounded-md text-green-700 font-semibold border-blue-950 hover:bg-green-600 hover:text-white transition-all duration-500 text-center"
             >
               Ko'proq ma'lumot
-            </button>
+            </a>
           </div>
 
           <div className="service w-1/3 flex flex-col gap-5">
@@ -67,13 +67,13 @@ const Services = () => {
               bizda ish faoliyati 24/7.
             </p>
 
-            <button
+            <a
               href="https://t.me/salimov_t"
               target="_blank"
-              className="px-3 py-1 border border-solid bg-slate-200 rounded-md text-green-700 font-semibold border-blue-950 hover:bg-green-600 hover:text-white transition-all duration-500"
+              className="px-3 py-1 border border-solid bg-slate-200 rounded-md text-green-700 font-semibold border-blue-950 hover:bg-green-600 hover:text-white transition-all duration-500 text-center"
             >
               Ko'proq ma'lumot
-            </button>
+            </a>
           </div>
         </div>
       </div>

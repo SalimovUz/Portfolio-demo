@@ -2,6 +2,7 @@ import React from "react";
 import Mine from "../../public/images/mine-foto.jpg";
 import Burger from "../../public/images/navbar-menu.svg";
 import "../App.css";
+import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
   const scrollToSection = (sectionId) => {
@@ -33,12 +34,14 @@ const Navbar = () => {
   }
 
   return (
-    <div>
-      <nav className="flex justify-between items-center">
+    <div className="fixed">
+      <nav className="flex justify-between items-center w-[95%] bg-white py-4">
         <div className="left flex items-center gap-[10%]">
-          <img src={Mine} className="w-[4%] rounded-full" alt="" />
+          <NavLink className={`w-[4%]`}>
+            <img src={Mine} className=" rounded-full" alt="" />
+          </NavLink>
 
-          <ul className="flex items-center gap-[20%]">
+          <ul className="flex items-center gap-[15%]">
             <li>
               <a
                 href="#contact"
@@ -60,7 +63,7 @@ const Navbar = () => {
             <li>
               <a
                 className="font-[barlow] font-medium text-lg text-gray-400 hover:text-[#21232D] transition-all duration-400 px-5 py-3"
-                href="#"
+                href="#works"
               >
                 Works
               </a>
@@ -68,22 +71,32 @@ const Navbar = () => {
             <li>
               <a
                 className="font-[barlow] font-medium text-lg text-gray-400 hover:text-[#21232D] transition-all duration-400 px-5 py-3"
-                href="#"
+                href="#blog"
               >
                 Blog
               </a>
             </li>
+            <NavLink to="/nakrutka">
+              <li>
+                <a
+                  href="#nakrutka"
+                  className="font-[barlow] font-medium text-lg text-gray-400 hover:text-[#21232D] transition-all duration-400 px-5 py-3"
+                >
+                  Nakrutka
+                </a>
+              </li>
+            </NavLink>
           </ul>
         </div>
 
         <div className="right">
-          <a href="#">
+          <NavLink to="/">
             <img
               className="p-4 w-16 rounded-full bg-slate-200"
               src={Burger}
               alt=""
             />
-          </a>
+          </NavLink>
         </div>
       </nav>
     </div>

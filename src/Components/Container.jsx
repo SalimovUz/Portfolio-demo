@@ -3,7 +3,7 @@ import Header from './Header'
 
 const Container = () => {
   return (
-    <div className='container mx-auto py-6'>
+    <div className='container mx-auto'>
       <Header/>
     </div>
   )

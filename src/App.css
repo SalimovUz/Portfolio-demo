@@ -10,3 +10,19 @@ body {
 #service {
   transition: all 0.3s ease;
 }
+
+.axa {
+  li {
+    a {
+      color: gray;
+      font-size: 15px;
+      font-weight: 500;
+      text-decoration: none;
+      transition: all 0.4s;
+      &:hover {
+        color: #000000;
+        text-decoration: none;
+      }
+    }
+  }
+}

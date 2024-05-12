@@ -4,13 +4,12 @@ import LinkProp from "./LinkProp";
 const Contact = () => {
   return (
     <div>
-      <div id="contact" className="contact mt-[12%] py-20">
+      <div className="contact mt-[12%] py-20">
         <LinkProp text="Bog'lanish" />
 
         <div className="titles flex justify-between items-center mt-[3%]">
           <h1 className="w-1/3 font-[barlow] text-3xl font-semibold">
-            Agar gaplashmoqchi bo'lsangiz, menga xabar bering potentsial
-            hamkorlik haqida. Men mustaqil ish uchun tayyorman.
+            Men bilan hamkorlik qilishni istasangiz, quyidagilarni to'ldiring va menga o'z murojaatingizni qoldiring
           </h1>
 
           <a
@@ -36,6 +35,8 @@ const Contact = () => {
             type="text"
             placeholder="Qanday savol bermoqchisiz?"
           />
+
+          <button className="px-8 py-2 border-2 rounded-lg border-blue-950 text-lg font-[Red Hat Display] font-semibold hover:bg-blue-900 transition-all duration-500 mx-auto hover:text-white border-solid">Yuborish</button>
         </form>
       </div>
     </div>
